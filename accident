@@ -1,0 +1,61 @@
+1. Define the Objectives
+Analyze road accident trends.
+Identify patterns based on time, vehicle type, road type, weather, and other conditions.
+Compare current year (CY) data with previous year (PY) data.
+Highlight actionable insights for policymakers or transportation authorities.
+2. Collect and Prepare Data
+Sources:
+Government or transport authority databases.
+Public datasets on road accidents.
+Manually compiled reports.
+Data Requirements:
+Accident details (type, severity, location, etc.).
+Time (day, month, year).
+Vehicle type, road type, weather conditions.
+Urban vs. rural area classification.
+Clean and Process Data:
+Handle missing or inconsistent values.
+Create derived fields (e.g., accident rates, severity categories).
+Ensure time-series data is uniform.
+3. Import Data into Power BI
+Use Power Query to load data:
+Connect to sources (Excel, SQL Server, CSV, etc.).
+Perform transformations like removing duplicates, renaming columns, and setting data types.
+4. Design the Data Model
+Create Relationships:
+Establish relationships between tables, e.g., link accidents to vehicles, roads, and weather.
+Add Measures:
+Use DAX (Data Analysis Expressions) for calculations, e.g.:
+% Change = (CY - PY) / PY * 100
+Fatal Severity Rate = Fatal Accidents / Total Accidents.
+5. Build Visualizations
+Key Metrics Cards:
+Display total accidents, casualties, and percentage changes using KPI cards.
+Charts:
+Bar charts for vehicle types, road types, and urban/rural distribution.
+Line chart for monthly trends (CY vs. PY).
+Filters:
+Add slicers for year, vehicle type, and weather conditions.
+Advanced Visuals:
+Heatmap for accidents by day of the week.
+Conditional formatting to highlight severe accident zones.
+6. Design Dashboard Layout
+Header:
+Include title and brief description of the dashboard purpose.
+Sections:
+Casualty Overview: Key metrics and trends.
+Breakdown Analysis: Visualizations by vehicle type, road type, and light conditions.
+Geo-analysis (if applicable): Map accidents based on location.
+Ensure interactivity by linking charts and slicers.
+7. Validate Results
+Cross-check values with source data.
+Verify calculations (e.g., percentage changes and trends).
+Ensure filters and slicers work as expected.
+8. Add Insights and Recommendations
+Include commentary on key findings:
+E.g., "Car-related accidents account for 80% of total incidents."
+Highlight notable trends like "Accidents decrease significantly in urban areas."
+9. Publish and Share
+Publish the dashboard to Power BI Service for sharing.
+Set up scheduled refresh if data updates periodically.
+Assign access controls based on audience (e.g., public vs. private).
